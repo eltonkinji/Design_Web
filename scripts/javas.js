@@ -1,15 +1,17 @@
-alert("Olá mundo!")
-
 var nasc = 2009;
 let nome = "Elton";
 const viva = true;
-let altura = 1.76;
 
-if (viva) {
-    let saudacao = "Olá, " + nome + "!" ;
-    let mensagem = `Altura ${altura}m | Idade: ${2026-nasc}`;
-    alert(saudacao+'\n'+mensagem);
+function calcIdade(ano=2026){
+    let idade = ano - nasc;
+    alert(`Dentro de Função : Idade: ${idade}`);
+    return idade;
 }
-else {
-    alert("Você já está morto.")
-}
+
+
+calcIdade();
+/*
+alert(`Fora de Função : Idade: ${idade}`)
+Erro pois a variável idade não existe fora da função.
+*/
+alert(`Fora de Função : Chamando CalcIdade: ${calcIdade(2024)}`)
