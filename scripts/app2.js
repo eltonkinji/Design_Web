@@ -1,11 +1,10 @@
-alert(x);
-var x = 10;
-var x = 20;
-alert(`x: ${x}`);
-
-let y = 10;
-y = 20;
-alert(`y: ${y}`);
-
-const z = 10;
-alert(`z: ${z}`);
+let n1 = prompt("Digite o primeiro número: ");
+n1 = Number(n1);
+let n2 = prompt("Digite o segundo número: ");
+n2 = Number(n2);
+alert(`A soma de ${n1} + ${n2} é: ${n1 + n2}`);
+alert(`A subtração de ${n1} - ${n2} é: ${n1 - n2}`);
+alert(`A multiplicação de ${n1} * ${n2} é: ${n1 * n2}`);
+alert(`A divisão de ${n1} / ${n2} é: ${n1 / n2}`);
+alert(`O resto da divisão de ${n1} % ${n2} é: ${n1 % n2}`);
+alert(`O resultado de ${n1} ** ${n2} é: ${n1 ** n2}`);
