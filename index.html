@@ -3,10 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula 04: Escopo de Variáveis</title>
+    <title>Aula 08: Interação JS e HTML</title>
 </head>
 <body>
-    <h1>Olá, seja bem-vindo!</h1>
-    <script src="./scripts/app2.js" defer></script>
+    <h3>Data:11/09/2026</h3>
+    <table border="1">
+        <tr>
+            <td>
+                <button id="ant">Anterior</button>
+                <button id="prox">Próximo</button>
+            </td>
+            <td rowspan="4">
+                <img id="foto" src="./pets/img/foto1.jpg" width="350px"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <select id="combobox">
+                    <option value="1">Mel</option>
+                    <option value="2">Max</option>
+                    <option value="3">Luna</option>
+                    <option value="4">Bidu</option>
+                    <option value="5">Nina</option>
+                    <option value="6">Toby</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li id="li1">Mel</li>
+                    <li id="li2">Max</li>
+                    <li id="li3">Luna</li>
+                    <li id="li4">Bidu</li>
+                    <li id="li5">Nina</li>
+                    <li id="li6">Toby</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="range" id="opacidade" min="0" max="1" step="0.1" value="1"/>
+            </td>
+        </tr>
+    </table>
+    <script src="./pets/js/app1.js" defer></script>
 </body>
 </html>
